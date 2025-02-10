@@ -3,12 +3,13 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Bubblegum Sans";
   margin: 20px;
   padding: 0;
 }
 
 h1 {
+  font-family: "Blinker";
   margin-top: 0;
   font-size: 22px;
 }
@@ -50,12 +51,6 @@ ul {
   box-sizing: border-box;
 }
 
-body {
-  font-family: sans-serif;
-  margin: 20px;
-  padding: 0;
-}
-
 .square {
   background: #fff;
   border: 1px solid #999;
@@ -91,4 +86,24 @@ body {
 
 .highlight {
   background-color: rgb(255, 217, 5);
+}
+
+/* Make the board larger and responsive */
+.board-row {
+  display: flex;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  font-size: 36px;
+  border-radius: 15px;
+}
+
+@media (max-width: 600px) {
+  .square {
+    width: 80px;
+    height: 80px;
+    font-size: 28px;
+  }
 }
